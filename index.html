@@ -36,13 +36,7 @@
                 const templateID = 'template_2dfdtzi';
 
                 emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        btn.value = 'Send Email';
-                        alert('Sent!');
-                    }, (err) => {
-                        btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
-                    });
+                   
             });
     </script>
 </body>
